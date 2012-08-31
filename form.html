@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My JQuery Mobile Web</title>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="jqm/nw-jqm.min.css" />
+		<script src="jqm/demos/js/jquery.js"></script>
+		<script src="jqm/jquery.mobile-1.1.0.min.js"></script>
+        <script src="app.js"></script>
+
+
+	</head>
+	<body>
+		<div data-role="page" id="formPage">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<a data-rel="back">Cancel</a>
+				<h1>Task Editor</h1>
+				<a data-icon="check" id="saveButton">Save</a>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+				<form action="#">
+				<ul data-role="listview">
+					<li data-role="list-divider">Task Details:<li>
+					<li data-role="fieldcontain">
+						<label for="taskName">Name:</label>
+						<input type="text" name="taskName" id="taskName" value="" />
+					</li>
+					<li data-role="fieldcontain">
+						<label for="taskDescription">Description:</label>
+						<textarea name="taskDescription" id="taskDescription">
+						</textarea>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="taskLogNum">Log Number:</label>
+						<input type="text" name="taskLogNum" id="taskLogNum" value="" />
+					</li>
+					<li data-role="fieldcontain">
+						<label for="taskCompleted">Completed:</label>
+						<select name="taskCompleted" id="taskCompleted" data-role="slider">
+							<option value="no">No</option>
+							<option value="yes">Yes</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="taskDate">Date:</label>
+                        <input type="date" name="taskDate" id="taskDate" value="" />
+                    </li>
+					<li data-role="fieldcontain">
+						<label for="taskEstimation">Time Spent:</label>
+                        <input type="range" name="taskEstimation" id="taskEstimation" value="1" min="0.25" max="16" step="0.25"  />
+                    </li>
+<!--					<li data-role="fieldcontain">
+                        <legend>Category</legend>
+                        <div data-role="controlgroup"
+                            data-type="horizontal">
+                            <label for="homeTask">Home</label>
+                            <input type="radio" name="category" id="homeTask" value="home" />
+
+                            <label for="workTask">Work</label>
+                            <input type="radio" name="category" id="workTask" value="work" />
+
+                            <label for="wifeTask">Wife</label>
+                            <input type="radio" name="category" id="wifeTask" value="wife" />
+
+                        </div>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="accept">I accept terms and conditions</label>
+                        <input type="checkbox" name="accept" id="accept" value="yes" />
+                    </li>
+					<li data-role="list-divider">
+                        Actions:
+                    </li>
+
+-->                 <li>
+                        <a data-role="button"
+                            data-rel="dialog"
+                            data-icon="delete"
+                            data-transition="fade"
+                            href="delete.html">Delete this task</a>
+                    </li>
+				</ul>
+				</form>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				© Gijima 2012
+			</div>
+		</div>
+	</body>
+</html>

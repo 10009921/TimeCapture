@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My JQuery Mobile Web</title>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="jqm/jquery.mobile-1.1.0.min.css" />
+		<script src="jqm/demos/js/jquery.js"></script>
+		<script src="jqm/jquery.mobile-1.1.0.min.js"></script>
+        <script src="app.js"></script>
+
+	</head>
+	<body>
+		<div data-role="page" id="deletePage">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<a data-rel="back">Cancel</a>
+				<h1>Are you sure?p</h1>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+				<h1>Delete this task?</h1>
+                <p>This cannot be undone</p>
+                <p>
+                    <a data-role="button" id="deleteButton">Yes</a>
+                    <a data-role="button" data-rel="back">No</a>
+                </p>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				© Gijima 2012
+			</div>
+		</div>
+	</body>
+</html>

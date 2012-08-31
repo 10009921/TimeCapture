@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My JQuery Mobile Web</title>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="stylesheet" href="jqm/jquery.mobile-1.1.0.min.css" />
+		<script src="jqm/demos/js/jquery.js"></script>
+		<script src="jqm/jquery.mobile-1.1.0.min.js"></script>
+        <script src="app.js"></script>
+
+	</head>
+	<body>
+		<div data-role="page" id="indexPage">
+			<div data-role="header" data-position="fixed" data-theme="b">
+            <a href="about.html" data-rel="dialog">About</a>
+				<h1>First JQM App</h1>
+				<a href="form.html"
+                    id="addTaskButon"
+                    data-role="button"
+				    data-icon="plus"
+				    class="ui-btn-right">
+                    New
+                </a>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+				<ul data-role="listview"
+                    data-insert="true"
+                    data-filter="true"
+                    id="taskList">
+				</ul>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				© Gijima 2012
+			</div>
+		</div>
+
+	</body>
+</html>
